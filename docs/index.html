@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muskan Kamran — Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/web-app-manifest-512x512.png">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+ <!-- NAV -->
+<header class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- LEFT SIDE: LOGO -->
+    <div class="brand">
+      <div class="logo">m.</div>
+    </div>
+
+    <!-- RIGHT SIDE: NAV LINKS + HAMBURGER -->
+    <div class="right-nav">
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <!-- HAMBURGER ONLY SHOWS ON MOBILE -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero-left">
+        <p class="lead hero-hello">
+        Hello, It's Me
+        <span class="inline-line"></span>
+        </p>
+        <h1 class="reveal">MUSKAN KAMRAN</h1>
+        <p class="role reveal">
+          And I'm a  <span id="typing"></span>
+          <span class="cursor">|</span>
+        </p>
+        <div class="hero-actions reveal">
+          <a id="hireDesktop" class="btn btn-primary" href="#" target="_blank" rel="noopener">Contact (WhatsApp)</a>
+          <a class="btn btn-primary" href="images/Muskan Kamran CV-P.pdf" download>Get CV</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <figure class="profile-wrap reveal" role="img" aria-label="Profile">
+          <!-- Replace this with your actual picture file -->
+          <img id="profileImg" src="images/Girl working with laptop.PNG" alt="Muskan Kamran profile image">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-label="About me">
+      <div class="about-img hidden-left">
+        <img class="about-portrait reveal hero-right" src="images/vecteezy_png-3d-render-of-a-woman-working-on-a-laptop-against_67218466.png" alt="Working illustration">
+      </div>
+
+      <div class="about-text hidden-right">
+        <div class="section-tag reveal">LET'S INTRODUCE ABOUT MYSELF</div>
+        <h3 class="reveal">I AM A <span style="color:var(--peach)">PROFESSIONAL SOFTWARE ENGINEER</span> AND WEB DEVELOPER</h3>
+        <p class="reveal">
+          Hello! I'm Muskan Kamran, a results-driven Software Engineer with over 5 years of experience specializing in full-stack web development.
+          I build robust, scalable, and user-friendly applications from concept to deployment — I enjoy solving complex problems and delivering production-ready solutions.
+        </p>
+        <div style="margin-top:18px" class="reveal">
+          <a class="btn btn-primary btn-primary-a" href="images/Muskan Kamran CV-P.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services" aria-label="Services">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <div>
+          <div class="section-title">SERVICE OFFERS</div>
+          <div class="section-sub">A brief compelling description of your core services.</div>
+        </div>
+      </div>
+
+      <div class="services-grid" style="margin-top:18px;">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-code"></i></div>
+          <h3>Custom Web Development</h3>
+          <p>End-to-end web applications using modern HTML, CSS, and JavaScript — maintainable, modular, and performant.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Python solutions for automation, data analysis, scripting, and backend tasks with clean, efficient code.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-database"></i></div>
+          <h3>Backend & APIs</h3>
+          <p>Building RESTful APIs, authentication, and server-side logic with Node.js and similar stacks.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-search"></i></div>
+          <h3>SEO & Optimization</h3>
+          <p>On-page and performance optimizations so your projects rank better and load faster.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Horizontal scroll) -->
+    <section id="projects" class="projects" aria-label="Projects">
+      <div class="heading-row">
+        <h2>Featured Projects</h2>
+        <div style="display:flex;gap:10px;align-items:center">
+          <small style="color:rgba(46,46,58,0.6)">Scroll → (swipe on mobile)</small>
+        </div>
+      </div>
+
+      <div class="projects-track" id="projectsTrack" aria-live="polite">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="thumb"><img src="images/project1.png" alt="Student Survey App"></div>
+          <h3>Student Survey App</h3>
+          <p>A web application to collect and analyze student surveys using vanilla JS, with charts and export features.</p>
+          <div class="project-links">
+            <a class="btn-outline" href="#" aria-label="View live demo">Live</a>
+            <a class="btn-outline" href="#" aria-label="View source on GitHub">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="thumb"><img src="images/project2.png" alt="Portfolio Website"></div>
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio built with attention to UI, accessibility and performance. Responsive and SEO-friendly.</p>
+          <div class="project-links">
+            <a class="btn-outline" href="#">Live</a>
+            <a class="btn-outline" href="#">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="thumb"><img src="images/project3.png" alt="Task Manager App"></div>
+          <h3>Task Manager App</h3>
+          <p>A lightweight task manager with local persistence, filtering and a clean UI for daily productivity.</p>
+          <div class="project-links">
+            <a class="btn-outline" href="#">Live</a>
+            <a class="btn-outline" href="#">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 4 (example) -->
+        <article class="project-card reveal">
+          <div class="thumb"><img src="images/project4.png" alt="Other Project"></div>
+          <h3>Analytics Dashboard</h3>
+          <p>Custom dashboard with charts and CSV export — used for insights and reporting.</p>
+          <div class="project-links">
+            <a class="btn-outline" href="#">Live</a>
+            <a class="btn-outline" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-cta" aria-label="Contact">
+    <div style="max-width:1000px; margin:60px auto; padding:36px 20px; background:var(--primary-gradient); border-radius:14px; color:white; text-align:center; box-shadow:var(--card-shadow);">
+        
+        <h3>Let's Build Something Amazing Together!</h3>
+        <p>Whether it's a website, application, or project idea, I'm ready to turn it into reality.</p>
+        <p>Feel free to reach out directly at <span style="color: rgb(72, 1, 72);"><strong>muskankamran.mk@gmail.com</strong></span> or via WhatsApp for a faster response.</p>
+        
+        <div style="margin-top:24px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+        <a href="mailto:muskankamran.mk@gmail.com" class="btn btn-secondary">Email Me</a>
+        <a id="whatsapp-link" href="#" target="_blank" class="btn btn-secondary">Contact via WhatsApp</a>
+        </div>
+        
+    </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="mailto:muskankamran.mk@gmail.com" aria-label="Email"><i class="fa-solid fa-at"></i></i></a>
+      <a href="https://www.linkedin.com/in/muskan-kamran-891720352" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      <a  id="footerWhatsapp" href="#" target="_blank"  aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <div style="opacity:0.9;margin-bottom:8px">Copyright ©2025 Muskan. All rights reserved.</div>
+    <div style="font-size:13px;opacity:0.85">Built with ❤️ by Muskan Kamran</div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
