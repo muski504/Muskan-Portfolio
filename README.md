@@ -2,6 +2,10 @@
 
 Welcome to the repository of my personal portfolio website! This project showcases my professional experience as a **Software Engineer** and **Full-Stack Web Developer**, highlighting my technical projects, core services, research background, and interactive AI applications.
 
+## 🌐 Live Access
+You can try out the application directly in your browser:
+👉 **[Launch Muskan's Portfolio](https://muski504.github.io/Muskan-Portfolio/)**
+
 ## 🌟 Key Features
 - **Responsive & Modern UI:** Fully adaptive design with smooth scroll and clean layouts for all screen sizes.
 - **Featured Projects Section:** Showcases key projects including an **AI Portfolio Assistant Chatbot** (Streamlit & Scikit-Learn) and an **Age Calculator** web app.
